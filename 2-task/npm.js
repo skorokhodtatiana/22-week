@@ -1,4 +1,4 @@
- var moment = require('moment');
-//import moment from 'moment';
-let data = moment(); 
+
+let format = "dddd";
+let data = moment().format(format);
 console.log(data);

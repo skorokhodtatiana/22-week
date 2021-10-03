@@ -10,6 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "chart.js": "^3.5.1",
-    "moment": "^2.29.1"
+    "fullcalendar": "^5.9.0",
+    "moment": "^2.29.1",
+    "tui-calendar": "^1.14.1"
   }
 }

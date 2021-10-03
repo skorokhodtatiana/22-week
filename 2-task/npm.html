@@ -1,14 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/tui-calendar/dist/tui-calendar.css">
+    <link rel="stylesheet" href="./npm.css">
     <title>Document</title>
 </head>
-<body>
-    <script src="./node_modules/moment/moment.js"></script>
-    <!-- <script src="./bundle.js"></script> -->
-    <script src="./npm.js"></script>
+<body class="body">
+    <h1 class="header">Список задач на рабочую неделю</h1>
+    <section class="section">
+    <div class="divChart">
+        <canvas id="myChart" width="10" height="5"></canvas>
+      </div>
+      <div class="wrapperCalendar">
+      <div id="calendar" style="height: 100%; width: 100%;"></div>
+    </div>
+</section>
+<div id="expected-date"></div>
+      <!-- <form action="#">
+<label>Сколько вам лет?
+    <input type="number" id="age"/>
+</label>
+<button type="submit" id="button">отправить</button>
+      </form> -->
+
+    <script src="./bundle.js"></script>
 </body>
 </html>

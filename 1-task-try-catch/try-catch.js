@@ -10,28 +10,10 @@ function getGifs() {
                 imgGif.src = responseImg.data[i].images.fixed_height_small.url;
             }
         })
-        // .catch((error) => {
-        //     throw new Error('Something went wrong')
-        // });
-
+      
         .catch((error) => {
             if(!navigator.onLine) {
               alert('Отсутствует подключение к сети интернет');
             }
           });
 }
-
-
-// fetch(url).then((response) => {
-//     if (response.ok) {
-//       return response.json();
-//     } else {
-//       throw new Error('Something went wrong');
-//     }
-//   })
-//   .then((responseJson) => {
-//     // Do something with the response
-//   })
-//   .catch((error) => {
-//     console.log(error)
-//   });

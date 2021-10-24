@@ -37,8 +37,8 @@ let serializedDays = JSON.stringify(days);
 daysWeek.push(mon.day, tues.day, wednes.day, thurs.day, fri.day);
 taskDay.push(mon.task, tues.task, wednes.task, thurs.task, fri.task);
 
-var ctx = document.getElementById('myChart');
-var myChart = new Chart(ctx, {
+let ctx = document.getElementById('myChart');
+let myChart = new Chart(ctx, {
     type: 'bar',
     data: {
         labels: daysWeek,
@@ -71,7 +71,7 @@ var myChart = new Chart(ctx, {
     }
 });
 
-var calendar = new Calendar('#calendar', {
+let calendar = new Calendar('#calendar', {
     defaultView: 'week',
     title: "Список задач",
     taskView: true,
@@ -113,7 +113,7 @@ var calendar = new Calendar('#calendar', {
 
 let monArr = [];
 
-for (i = 0; i < mon.description.length; i++) {
+for (let i = 0; i < mon.description.length; i++) {
     monArr.push({
         id: i + 1,
         calendarId: '1',
@@ -130,7 +130,7 @@ calendar.createSchedules(monArr);
 
 let tuesArr = [];
 
-for (i = 0; i < tues.description.length; i++) {
+for (let i = 0; i < tues.description.length; i++) {
     tuesArr.push({
         id: i + 1,
         calendarId: '1',
@@ -147,7 +147,7 @@ calendar.createSchedules(tuesArr);
 
 let wednesArr = [];
 
-for (i = 0; i < wednes.description.length; i++) {
+for (let i = 0; i < wednes.description.length; i++) {
     wednesArr.push({
         id: i + 1,
         calendarId: '1',
@@ -164,7 +164,7 @@ calendar.createSchedules(wednesArr);
 
 let thursArr = [];
 
-for (i = 0; i < thurs.description.length; i++) {
+for (let i = 0; i < thurs.description.length; i++) {
     thursArr.push({
         id: i + 1,
         calendarId: '1',
@@ -180,7 +180,7 @@ calendar.createSchedules(thursArr);
 
 let friArr = [];
 
-for (i = 0; i < fri.description.length; i++) {
+for (let i = 0; i < fri.description.length; i++) {
     friArr.push({
         id: i + 1,
         calendarId: '1',
